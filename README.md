@@ -22,7 +22,7 @@
 	    * Atom Editor
 	    * Android Studio
 	
-`웹개발`
+## 웹개발
 
     * 웹표준
     * 웹접근성
@@ -41,37 +41,37 @@
     * Servlet
     * 전자정부프레임워크
     
-`버전관리`
+## 버전관리
 
     * SVN
     * Github
-`패키지 관리 툴`
+## 패키지 관리 툴
 
     * npm
     * Bower
     * Grunt
     * Gulp
     
-`크로스플랫폼`
+## 크로스플랫폼
 
 	* IONIC
 	* PhoneGap / Cordova
 	* NW.js
 	* electron
 	
-`협업툴`
+## 협업툴
 
 	* Atlassian
 		* JIRA
 		* Confluence
 	* Google Docs
 	
-`클라우드 서비스`
+## 클라우드 서비스
 
 	* AWS
 	* 파이어베이스
 	
-`설치형 블로그`
+## 설치형 블로그
 
 	* 워드프레스
 	* 그누보드
