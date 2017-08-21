@@ -144,6 +144,14 @@ p a:hover {
     font-weight: bold;
     font-family: "Montserrat", sans-serif;
 }
+
+.expand{
+    color: rgb(69, 69, 82);
+    padding: 0.55em;
+    font-size: .75em;
+    font-family: "Montserrat", sans-serif;
+}
+
 .bar.cf:before {
     content: "";
     border-radius: 5px;

@@ -8,3 +8,6 @@ setTimeout(function start (){
     });
 }, 100)
 
+$(function () {
+    $(".expand").hide()
+})
