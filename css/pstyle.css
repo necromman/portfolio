@@ -272,6 +272,7 @@ p a:hover {
     border-radius: 5px;
     width: 40%;
     background: #fff;
+    margin: 0 3%;
 }
 #timeline .timeline-item .timeline-content p{
     margin: 0;
@@ -288,7 +289,7 @@ p a:hover {
 #timeline .timeline-item .timeline-content:before {
     content: '';
     position: absolute;
-    left: 40.6%;
+    left: 43.6%;
     top: 7px;
     width: 0;
     height: 0;
