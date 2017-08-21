@@ -40,11 +40,18 @@ body{
 
 #wrap {
     margin: 0 auto;
-    padding: 15px 50px 50px;
+    padding: 0 50px 50px;
     min-width: 1000px;
     width: 1000px;
 }
+
+.yi-git{
+    text-align: right;
+    padding:1%;
+}
+
 h1 {
+    margin: 0 !important;
     color: #f66;
     font: bold 48px/1 Quicksand, sans-serif;
     margin-bottom: 32px;
