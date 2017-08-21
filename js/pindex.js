@@ -6,8 +6,13 @@ setTimeout(function start (){
             $bar.css('width', $bar.attr('data-percent'));
         }, i*50);
     });
-}, 100)
+}, 100);
 
 $(function () {
-    $(".expand").hide()
-})
+    $(".expand").hide();
+    
+    $(".label").click(function () {
+        $(this).parent().next(".expand").stop().slideToggle()
+    })
+    
+});
