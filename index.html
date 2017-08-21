@@ -16,7 +16,7 @@
 
     <title>YI-Dae-Hun portfolio</title>
 
-    <link rel="stylesheet" href="css/pstyle.css?ver=013">
+    <link rel="stylesheet" href="css/pstyle.css?ver=023">
     <link rel="stylesheet" href="public/components/normalize-css/normalize.css">
     <link rel="stylesheet" href="public/components/font-awesome/css/font-awesome.css">
     <link href='https://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet'>
@@ -25,9 +25,8 @@
 
 <body>
 
-<div id="wrap">
-
-    <div class="yi-git">
+<div class="yi-git">
+    <div class="yi-git-inner">
         <span>
             <a href="https://github.com/necromman/portfolio" target="_blank">
                     <img
@@ -43,6 +42,9 @@
 	</a>
         </span>
     </div>
+</div>
+
+<div id="wrap">
 
     <h1>개발흐름을 아는 퍼블리셔 이대훈</h1>
     <h2>성장할 준비가 되어 있는 개발자</h2>
@@ -225,9 +227,64 @@
     </div>
 
 
+    <div class="card card-2">
+        <h3>타임라인</h3>
+        <div class="gwrap">
+            <div id="timeline">
+            </div>
+            <input id="pac-input" name="p-search" class="controls" placeholder="채팅입력">
+        </div>
+    </div>
+
 </div>
 
+
 <script src="public/components/modernizr/bin/modernizr"></script>
-<script src="js/pindex.js?ver=003"></script>
+<script src="js/pindex.js?ver=005"></script>
+
+<!-- 파이어베이스 -->
+<script src="js/firebase.js"></script>
+<script src="https://www.gstatic.com/firebasejs/3.6.2/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/3.6.2/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/3.6.2/firebase-database.js"></script>
+<script src="https://www.gstatic.com/firebasejs/3.6.2/firebase-messaging.js"></script>
+<script src="https://www.gstatic.com/firebasejs/3.9.0/firebase.js"></script>
+<script>
+    // Initialize Firebase
+    var config = {
+        apiKey: "AIzaSyDM0nHhbIi5YU4eqtbFTAkH3nL7CBchBDY",
+        authDomain: "yogurt-22fd4.firebaseapp.com",
+        databaseURL: "https://yogurt-22fd4.firebaseio.com",
+        projectId: "yogurt-22fd4",
+        storageBucket: "yogurt-22fd4.appspot.com",
+        messagingSenderId: "178442852803"
+    };
+    firebase.initializeApp(config);
+</script>
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
+        // // The Firebase SDK is initialized and available here!
+        //
+        // firebase.auth().onAuthStateChanged(user => { });
+        // firebase.database().ref('/path/to/ref').on('data', snapshot => { });
+        // firebase.messaging().requestPermission().then(() => { });
+        // firebase.storage().ref('/path/to/ref').getDownloadURL().then(() => { });
+        //
+        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
+        try {
+            let app = firebase.app();
+            let features = ['auth', 'database', 'messaging', 'storage'].filter(feature = > typeof app[feature] === 'function'
+        )
+            ;
+            document.getElementById('load').innerHTML = `Firebase SDK loaded with ${features.join(', ')}`;
+        } catch (e) {
+            console.error(e);
+            document.getElementById('load').innerHTML = 'Error loading the Firebase SDK, check the console.';
+        }
+    });
+</script>
+
+
 </body>
 </html>
