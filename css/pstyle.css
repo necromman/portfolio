@@ -136,6 +136,29 @@ p a:hover {
     font-weight: bold;
     font-family: "Montserrat", sans-serif;
 }
+
+
+.label.close:before {
+    content: "\f078";
+    font-family: FontAwesome;
+    position: absolute;
+    font-size: 1em;
+    color: white;
+    top: 1em;
+    right: 1em;
+}
+.label.open:before {
+    content: "\f077";
+    font-family: FontAwesome;
+    position: absolute;
+    font-size: 1em;
+    color: white;
+    top: 1em;
+    right: 1em;
+}
+
+
+
 .bar .label.light {
     background: #454552;
 }
@@ -153,6 +176,7 @@ p a:hover {
 }
 
 .expand{
+    display: none;
     color: rgb(69, 69, 82);
     padding: 0.55em;
     font-size: .75em;

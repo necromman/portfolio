@@ -9,10 +9,16 @@ setTimeout(function start (){
 }, 100);
 
 $(function () {
-    $(".expand").hide();
-    
     $(".label").click(function () {
-        $(this).parent().next(".expand").stop().slideToggle()
+        var _this = $(this);
+        _this.parent().next(".expand").stop().slideToggle()
+        if(_this.hasClass("open")){
+            _this.removeClass("open")
+            _this.addClass("close")
+        }else if(_this.hasClass("close")){
+            _this.removeClass("close")
+            _this.addClass("open")
+        }
     })
-    
+
 });
