@@ -21,6 +21,8 @@
   ],
   "devDependencies": {
     "font-awesome": "fontawesome#^4.7.0",
-    "jQuery": "^3.2.1"
+    "jQuery": "^3.2.1",
+    "modernizr": "^3.5.0",
+    "normalize-css": "^7.0.0"
   }
 }
