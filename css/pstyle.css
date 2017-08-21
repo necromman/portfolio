@@ -144,7 +144,6 @@ p a:hover {
     position: absolute;
     font-size: 1em;
     color: white;
-    top: 1em;
     right: 1em;
 }
 .label.open:before {
@@ -153,7 +152,6 @@ p a:hover {
     position: absolute;
     font-size: 1em;
     color: white;
-    top: 1em;
     right: 1em;
 }
 
