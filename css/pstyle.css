@@ -24,8 +24,13 @@
         display: block !important;
     }
     .count {
-        position: sticky !important;
         display: block;
+    }
+}
+
+@media (min-width: 769px) {
+    .count {
+        position: absolute;
     }
 }
 
@@ -164,7 +169,6 @@ p a:hover {
 .count {
     margin-right: 5px;
     color: rgb(69, 69, 82);
-    position: absolute;
     right: .25em;
     top: .75em;
     padding: .15em;
