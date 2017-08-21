@@ -1,0 +1,22 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "* 경력 스타트업 1년 열정은 99%\r     * 아직 창창한 만 32세, 쥐띠\r     * 한타 400\r     * 영타 300\r     * 구글번역\r     * PC트러블슈팅\r     * 프론트엔드\r         * 퍼블리셔\r     * 백엔드\r         * 전반적인 이해\r     * Tool\r \t    * Eclipse\r \t    * jetbrains\r \t\t    * IntelliJ\r \t\t    * WebStorm\r \t\t    * PhpStorm\r \t    * Sublime Text3\r \t    * Atom Editor\r \t    * Android Studio",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/necromman/portfolio.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/necromman/portfolio/issues"
+  },
+  "homepage": "https://github.com/necromman/portfolio#readme",
+  "devDependencies": {
+    "bower": "^1.8.0"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "name": "yidaehun-portfolio",
+  "authors": [
+    "necromman <necromman@gmail.com>"
+  ],
+  "description": "이대훈 포트폴리오",
+  "main": "index.html",
+  "keywords": [
+    "프론트엔드",
+    "퍼블리셔",
+    "웹개발"
+  ],
+  "license": "MIT",
+  "homepage": "http://jlcompany.woobi.co.kr",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "font-awesome": "fontawesome#^4.7.0",
+    "jQuery": "^3.2.1"
+  }
+}
