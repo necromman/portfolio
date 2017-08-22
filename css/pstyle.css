@@ -268,7 +268,7 @@ p a:hover {
     width: 100%;
 }
 #timeline .timeline-item {
-    margin-bottom: 50px;
+    margin-bottom: 0.5em;
     position: relative;
 }
 #timeline .timeline-item .timeline-icon {
