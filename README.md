@@ -21,6 +21,7 @@
 	    * Sublime Text3
 	    * Atom Editor
 	    * Android Studio
+	    * Evernote
 	
 ## 웹개발
 
