@@ -40,6 +40,8 @@
     * JAVA
     * Servlet
     * 전자정부프레임워크
+    * Oracle
+    * MySQL
     
 ## 버전관리
 
