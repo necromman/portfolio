@@ -338,6 +338,8 @@ p a:hover {
         display: none;
     }
     #pac-input{
-        width: 93.8%;
+        width: 97.3% !important;
+        margin: 0 auto 5px auto;
+        padding: 0 !important;
     }
 }

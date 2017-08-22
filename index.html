@@ -16,7 +16,7 @@
 
     <title>YI-Dae-Hun portfolio</title>
 
-    <link rel="stylesheet" href="css/pstyle.css?ver=024">
+    <link rel="stylesheet" href="css/pstyle.css?ver=025">
     <link rel="stylesheet" href="public/components/normalize-css/normalize.css">
     <link rel="stylesheet" href="public/components/font-awesome/css/font-awesome.css">
     <link href='https://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet'>
@@ -244,11 +244,11 @@
 
 <!-- 파이어베이스 -->
 <script src="js/firebase.js"></script>
-<script src="https://www.gstatic.com/firebasejs/3.6.2/firebase-app.js"></script>
-<script src="https://www.gstatic.com/firebasejs/3.6.2/firebase-auth.js"></script>
-<script src="https://www.gstatic.com/firebasejs/3.6.2/firebase-database.js"></script>
-<script src="https://www.gstatic.com/firebasejs/3.6.2/firebase-messaging.js"></script>
-<script src="https://www.gstatic.com/firebasejs/3.9.0/firebase.js"></script>
+<script src="public/components/firebase/firebase-app.js"></script>
+<script src="public/components/firebase/firebase-auth.js"></script>
+<script src="public/components/firebase/firebase-database.js"></script>
+<script src="public/components/firebase/firebase-messaging.js"></script>
+<script src="public/components/firebase/firebase.js"></script>
 <script>
     // Initialize Firebase
     var config = {
@@ -262,7 +262,6 @@
     firebase.initializeApp(config);
 </script>
 <script>
-    document.addEventListener('DOMContentLoaded', function () {
         // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
         // // The Firebase SDK is initialized and available here!
         //
@@ -272,17 +271,6 @@
         // firebase.storage().ref('/path/to/ref').getDownloadURL().then(() => { });
         //
         // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
-        try {
-            let app = firebase.app();
-            let features = ['auth', 'database', 'messaging', 'storage'].filter(feature = > typeof app[feature] === 'function'
-        )
-            ;
-            document.getElementById('load').innerHTML = `Firebase SDK loaded with ${features.join(', ')}`;
-        } catch (e) {
-            console.error(e);
-            document.getElementById('load').innerHTML = 'Error loading the Firebase SDK, check the console.';
-        }
-    });
 </script>
 
 
