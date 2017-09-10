@@ -28,14 +28,6 @@ $screen-lg-max: 1920px;
 }
 
 
-.ttt2{
-
-}
-
-
-
-
-
 @mixin background-image($image) {
     background-image: -webkit-radial-gradient($image);
     background-image: -moz-radial-gradient($image);
