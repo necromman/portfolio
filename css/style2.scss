@@ -1,0 +1,100 @@
+$color: red;
+
+$width-100: 100%;
+
+$text-center: center;
+
+
+$screen-xs-max: 767px;
+$screen-sm-max: 991px;
+$screen-md-max: 1199px;
+$screen-lg-max: 1920px;
+
+
+
+@function calc-percent($target, $container) {
+    @return ($target / $container) * 100%;
+}
+
+@function cp($target, $container) {
+    @return calc-percent($target, $container);
+}
+
+.my-module {
+    width: calc-percent($screen-md-max, $screen-lg-max);
+    &:after{
+        content: "";
+    }
+}
+
+
+.ttt2{
+
+}
+
+
+
+
+
+@mixin background-image($image) {
+    background-image: -webkit-radial-gradient($image);
+    background-image: -moz-radial-gradient($image);
+    background-image: -ms-radial-gradient($image);
+    background-image: radial-gradient($image);
+}
+
+body{
+    background-color: #f6f6f6;
+    background-size: 4px 4px;
+    @include background-image((circle, hsla(0, 0%, 0%, .05) 25%, transparent 25%));
+}
+
+
+@media (max-width: $screen-xs-max) {
+    .yi-git-inner {
+        width: $width-100;
+    }
+    #wrap {
+        width: $width-100;
+        padding: 0;
+        h1 {
+            font-size: 1.5em;
+        }
+        h2 {
+            font-size: 1.2em;
+        }
+        .card {
+            width: 90%;
+            padding: 10px 16px;
+            .bar {
+                margin: .1em 0;
+                .label {
+                    text-align: center;
+                    width: 7em;
+                    padding: 0.5em 1em;
+                    display: block;
+                }
+            }
+            .count {
+                display: block;
+            }
+        }
+    }
+}
+
+@media (max-width: $screen-sm-max) {
+    #wrap {
+        .card {
+            .count {
+                position: absolute;
+            }
+        }
+    }
+}
+
+@media (max-width: $screen-md-max) {
+
+}
+
+@media (max-width: $screen-lg-max) {
+}

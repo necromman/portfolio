@@ -14,9 +14,10 @@
  * ======= 0. common style
 
  */
-
+.label a{vertical-align:top; color:#ffffff; text-decoration:none;display: block;padding: 1em}
+a:hover {}
 .txt-center{text-align: center}
-
+.display-n{display: none}
 
 
 /*
@@ -51,13 +52,12 @@
     }
     .bar .label {
         text-align: center;
-        width: 7em !important;
-        padding: 0.5em 1em !important;
-        display: block !important;
     }
     .count {
         display: block;
     }
+    .expand img{width: 100% !important;}
+
 }
 
 @media (min-width: 769px) {
@@ -74,6 +74,9 @@ body{
     background-image:         radial-gradient(circle, hsla(0,0%,0%,.05) 25%, transparent 25%);
     background-size: 4px 4px;
 }
+
+#skip_nav{display: none;}
+
 
 .yi-git{
     width: 100%;
@@ -177,7 +180,6 @@ p a:hover {
     cursor: pointer;
     border-radius: 5px;
     font-size: .75em;
-    padding: 1em;
     background: #454552;
     width: 9em;
     display: inline-block;
@@ -195,6 +197,7 @@ p a:hover {
     font-size: 1em;
     color: white;
     right: 1em;
+    top:1em;
 }
 .label.open:before {
     content: "\f077";
@@ -203,6 +206,7 @@ p a:hover {
     font-size: 1em;
     color: white;
     right: 1em;
+    top:1em;
 }
 
 

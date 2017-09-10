@@ -1,0 +1,41 @@
+.my-module {
+  width: 62.4479166667%; }
+  .my-module:after {
+    content: ""; }
+
+body {
+  background-color: #f6f6f6;
+  background-size: 4px 4px;
+  background-image: -webkit-radial-gradient(circle, rgba(0, 0, 0, 0.05) 25%, transparent 25%);
+  background-image: -moz-radial-gradient(circle, rgba(0, 0, 0, 0.05) 25%, transparent 25%);
+  background-image: -ms-radial-gradient(circle, rgba(0, 0, 0, 0.05) 25%, transparent 25%);
+  background-image: radial-gradient(circle, rgba(0, 0, 0, 0.05) 25%, transparent 25%); }
+
+@media (max-width: 767px) {
+  .yi-git-inner {
+    width: 100%; }
+
+  #wrap {
+    width: 100%;
+    padding: 0; }
+    #wrap h1 {
+      font-size: 1.5em; }
+    #wrap h2 {
+      font-size: 1.2em; }
+    #wrap .card {
+      width: 90%;
+      padding: 10px 16px; }
+      #wrap .card .bar {
+        margin: .1em 0; }
+        #wrap .card .bar .label {
+          text-align: center;
+          width: 7em;
+          padding: 0.5em 1em;
+          display: block; }
+      #wrap .card .count {
+        display: block; } }
+@media (max-width: 991px) {
+  #wrap .card .count {
+    position: absolute; } }
+
+/*# sourceMappingURL=style2.css.map */

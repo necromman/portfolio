@@ -24,6 +24,7 @@
     "jQuery": "^3.2.1",
     "modernizr": "^3.5.0",
     "normalize-css": "^7.0.0",
-    "firebase": "^4.3.0"
+    "firebase": "^4.3.0",
+    "bootstrap": "^3.3.7"
   }
 }
