@@ -75,7 +75,37 @@ body{
     background-size: 4px 4px;
 }
 
-#skip_nav{display: none;}
+#skip_nav {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    margin: 0;
+}
+
+#skip_nav .shortcuts{
+    position: absolute;
+    width: 100%;
+    margin: 0;
+    top: 0
+}
+
+#skip_nav .shortcuts a{
+    text-align: center;
+    height: 0;
+    color: white;
+    font-size: 0.9em;
+    margin: 0 auto;
+}
+
+#skip_nav .shortcuts a:hover,#skip_nav .shortcuts a:active,#skip_nav .shortcuts a:focus{
+    display: block;
+    width: 300px;
+    border-radius: 5px;
+    height: auto;
+    padding: 0.5em;
+    border: 2px solid #7fffd4;
+    background-color: #404040;
+}
 
 
 .yi-git{
