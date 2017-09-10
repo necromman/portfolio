@@ -190,7 +190,7 @@ p a:hover {
 }
 
 
-.label.close:before {
+.label.close a:before {
     content: "\f078";
     font-family: FontAwesome;
     position: absolute;
@@ -199,7 +199,7 @@ p a:hover {
     right: 1em;
     top:1em;
 }
-.label.open:before {
+.label.open a:before {
     content: "\f077";
     font-family: FontAwesome;
     position: absolute;
