@@ -321,6 +321,7 @@ p a:hover {
 #timeline .timeline-item .timeline-content p{
     margin: 0;
     padding-left: 2%;
+    line-height: 2;
 }
 #timeline .timeline-item .timeline-content h2 {
     background: #454552;
@@ -359,6 +360,26 @@ p a:hover {
     border-radius: 5px;
     border: 2px solid #454552;
     outline: none;
+}
+
+#timeline .reply-wrap{
+    border: 1px solid #ddd;
+    width: 80%;
+    margin: 0.5em auto;
+    min-height: 2em;
+}
+#timeline .reply-wrap p{
+    font-size: 0.8em;
+    font-weight: 100;
+    height: 2.5em;
+}
+
+#timeline .reply-input-box{
+    text-align: right;
+    padding: 0.5em 0.5em;
+}
+#timeline .reply-input-box input{
+    width:100%;
 }
 
 
