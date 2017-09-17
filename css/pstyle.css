@@ -49,29 +49,6 @@
 @media (min-width: 769px) {
     .count {
         position: absolute; } }
-.label a {
-    vertical-align: top;
-    color: #ffffff;
-    text-decoration: none;
-    display: block;
-    padding: 1em; }
-.label.close a:before {
-    content: "\f078";
-    font-family: FontAwesome;
-    position: absolute;
-    font-size: 1em;
-    color: #ffffff;
-    right: 1em;
-    top: 1em; }
-.label.open a:before {
-    content: "\f077";
-    font-family: FontAwesome;
-    position: absolute;
-    font-size: 1em;
-    color: #ffffff;
-    right: 1em;
-    top: 1em; }
-
 .txt-center {
     text-align: center; }
 
@@ -80,8 +57,11 @@
 
 body {
     background-color: #f6f6f6;
-    background-image: radial-gradient(circle, rgba(0, 0, 0, 0.05) 25%, transparent 25%);
-    background-size: 4px 4px; }
+    background-size: 4px 4px;
+    background-image: -webkit-radial-gradient(circle, rgba(0, 0, 0, 0.05) 25%, transparent 25%);
+    background-image: -moz-radial-gradient(circle, rgba(0, 0, 0, 0.05) 25%, transparent 25%);
+    background-image: -ms-radial-gradient(circle, rgba(0, 0, 0, 0.05) 25%, transparent 25%);
+    background-image: radial-gradient(circle, rgba(0, 0, 0, 0.05) 25%, transparent 25%); }
 
 #skip_nav {
     position: absolute;
@@ -92,7 +72,7 @@ body {
     position: absolute;
     width: 100%;
     margin: 0;
-    top: 0; }
+    top: -200px; }
 #skip_nav .shortcuts a {
     text-align: center;
     height: 0;
@@ -170,16 +150,11 @@ p a:hover {
     width: 95%;
     padding: 10px 15px;
     margin: 0 auto 15px auto; }
-
-.card-2 {
-    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23); }
-
-.gwrap {
+.card .gwrap {
     overflow: hidden;
     width: 100%;
     margin: 0 auto; }
-
-.bar {
+.card .gwrap .holder .bar {
     border-radius: 5px;
     background: #fdd692;
     width: 0;
@@ -187,9 +162,9 @@ p a:hover {
     color: #ffffff;
     position: relative;
     transition: width 1s, background .1s; }
-.bar:nth-of-type(2n) {
+.card .gwrap .holder .bar:nth-of-type(2n) {
     background: #ffcb71; }
-.bar .label {
+.card .gwrap .holder .bar .label {
     cursor: pointer;
     border-radius: 5px;
     font-size: .75em;
@@ -200,17 +175,38 @@ p a:hover {
     z-index: 2;
     font-weight: bold;
     font-family: Montserrat, sans-serif; }
-.bar .label.light {
+.card .gwrap .holder .bar .label.light {
     background: #454552; }
-.bar.cf:before {
+.card .gwrap .holder .bar .label a {
+    vertical-align: top;
+    color: #ffffff;
+    text-decoration: none;
+    display: block;
+    padding: 1em; }
+.card .gwrap .holder .bar .label.close a:before {
+    content: "\f078";
+    font-family: FontAwesome;
+    position: absolute;
+    font-size: 1em;
+    color: #ffffff;
+    right: 1em;
+    top: 1em; }
+.card .gwrap .holder .bar .label.open a:before {
+    content: "\f077";
+    font-family: FontAwesome;
+    position: absolute;
+    font-size: 1em;
+    color: #ffffff;
+    right: 1em;
+    top: 1em; }
+.card .gwrap .holder .bar.cf:before {
     content: "";
     border-radius: 5px;
     position: absolute;
     height: 100%;
     width: 1000px;
     background-color: rgba(249, 183, 111, 0.23); }
-
-.count {
+.card .gwrap .holder .bar .count {
     margin-right: 5px;
     color: #454552;
     right: .25em;
@@ -219,13 +215,15 @@ p a:hover {
     font-size: .75em;
     font-weight: bold;
     font-family: Montserrat, sans-serif; }
-
-.expand {
+.card .gwrap .holder .expand {
     display: none;
     color: #454552;
     padding: 0.55em;
     font-size: .75em;
     font-family: Montserrat, sans-serif; }
+
+.card-2 {
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23); }
 
 #timeline {
     width: 100%;

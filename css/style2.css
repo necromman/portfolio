@@ -49,29 +49,6 @@
 @media (min-width: 769px) {
   .count {
     position: absolute; } }
-.label a {
-  vertical-align: top;
-  color: #ffffff;
-  text-decoration: none;
-  display: block;
-  padding: 1em; }
-.label.close a:before {
-  content: "\f078";
-  font-family: FontAwesome;
-  position: absolute;
-  font-size: 1em;
-  color: #ffffff;
-  right: 1em;
-  top: 1em; }
-.label.open a:before {
-  content: "\f077";
-  font-family: FontAwesome;
-  position: absolute;
-  font-size: 1em;
-  color: #ffffff;
-  right: 1em;
-  top: 1em; }
-
 .txt-center {
   text-align: center; }
 
@@ -80,8 +57,11 @@
 
 body {
   background-color: #f6f6f6;
-  background-image: radial-gradient(circle, rgba(0, 0, 0, 0.05) 25%, transparent 25%);
-  background-size: 4px 4px; }
+  background-size: 4px 4px;
+  background-image: -webkit-radial-gradient(circle, rgba(0, 0, 0, 0.05) 25%, transparent 25%);
+  background-image: -moz-radial-gradient(circle, rgba(0, 0, 0, 0.05) 25%, transparent 25%);
+  background-image: -ms-radial-gradient(circle, rgba(0, 0, 0, 0.05) 25%, transparent 25%);
+  background-image: radial-gradient(circle, rgba(0, 0, 0, 0.05) 25%, transparent 25%); }
 
 #skip_nav {
   position: absolute;
@@ -170,62 +150,80 @@ p {
   width: 95%;
   padding: 10px 15px;
   margin: 0 auto 15px auto; }
+  .card .gwrap {
+    overflow: hidden;
+    width: 100%;
+    margin: 0 auto; }
+    .card .gwrap .holder .bar {
+      border-radius: 5px;
+      background: #fdd692;
+      width: 0;
+      margin: .25em 0;
+      color: #ffffff;
+      position: relative;
+      transition: width 1s, background .1s; }
+      .card .gwrap .holder .bar:nth-of-type(2n) {
+        background: #ffcb71; }
+      .card .gwrap .holder .bar .label {
+        cursor: pointer;
+        border-radius: 5px;
+        font-size: .75em;
+        background: #454552;
+        width: 9em;
+        display: inline-block;
+        position: relative;
+        z-index: 2;
+        font-weight: bold;
+        font-family: Montserrat, sans-serif; }
+        .card .gwrap .holder .bar .label.light {
+          background: #454552; }
+        .card .gwrap .holder .bar .label a {
+          vertical-align: top;
+          color: #ffffff;
+          text-decoration: none;
+          display: block;
+          padding: 1em; }
+        .card .gwrap .holder .bar .label.close a:before {
+          content: "\f078";
+          font-family: FontAwesome;
+          position: absolute;
+          font-size: 1em;
+          color: #ffffff;
+          right: 1em;
+          top: 1em; }
+        .card .gwrap .holder .bar .label.open a:before {
+          content: "\f077";
+          font-family: FontAwesome;
+          position: absolute;
+          font-size: 1em;
+          color: #ffffff;
+          right: 1em;
+          top: 1em; }
+      .card .gwrap .holder .bar.cf:before {
+        content: "";
+        border-radius: 5px;
+        position: absolute;
+        height: 100%;
+        width: 1000px;
+        background-color: rgba(249, 183, 111, 0.23); }
+      .card .gwrap .holder .bar .count {
+        margin-right: 5px;
+        color: #454552;
+        right: .25em;
+        top: .75em;
+        padding: .15em;
+        font-size: .75em;
+        font-weight: bold;
+        font-family: Montserrat, sans-serif; }
+    .card .gwrap .holder .expand {
+      display: none;
+      color: #454552;
+      padding: 0.55em;
+      font-size: .75em;
+      font-family: Montserrat, sans-serif; }
 
 .card-2 {
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23); }
-
-.gwrap {
-  overflow: hidden;
-  width: 100%;
-  margin: 0 auto; }
-
-.bar {
-  border-radius: 5px;
-  background: #fdd692;
-  width: 0;
-  margin: .25em 0;
-  color: #ffffff;
-  position: relative;
-  transition: width 1s, background .1s; }
-  .bar:nth-of-type(2n) {
-    background: #ffcb71; }
-  .bar .label {
-    cursor: pointer;
-    border-radius: 5px;
-    font-size: .75em;
-    background: #454552;
-    width: 9em;
-    display: inline-block;
-    position: relative;
-    z-index: 2;
-    font-weight: bold;
-    font-family: Montserrat, sans-serif; }
-    .bar .label.light {
-      background: #454552; }
-  .bar.cf:before {
-    content: "";
-    border-radius: 5px;
-    position: absolute;
-    height: 100%;
-    width: 1000px;
-    background-color: rgba(249, 183, 111, 0.23); }
-
-.count {
-  margin-right: 5px;
-  color: #454552;
-  right: .25em;
-  top: .75em;
-  padding: .15em;
-  font-size: .75em;
-  font-weight: bold;
-  font-family: Montserrat, sans-serif; }
-
-.expand {
-  display: none;
-  color: #454552;
-  padding: 0.55em;
-  font-size: .75em;
-  font-family: Montserrat, sans-serif; }
 
 #timeline {
   width: 100%;
