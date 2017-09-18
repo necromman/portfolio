@@ -10,7 +10,7 @@ define(['ModernizrProto', 'Modernizr', 'hasOwnProp', 'setClasses'], function(Mod
    *
    * @memberof Modernizr
    * @name Modernizr.on
-   * @access public
+   * @access public2
    * @function on
    * @param {string} feature - String name of the feature detect
    * @param {function} cb - Callback function returning a Boolean - true if feature is supported, false if not
@@ -89,7 +89,7 @@ define(['ModernizrProto', 'Modernizr', 'hasOwnProp', 'setClasses'], function(Mod
    * @name Modernizr.addTest
    * @optionName Modernizr.addTest()
    * @optionProp addTest
-   * @access public
+   * @access public2
    * @function addTest
    * @param {string|object} feature - The string name of the feature detect, or an
    * object of feature detect names and test

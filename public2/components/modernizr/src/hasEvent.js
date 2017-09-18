@@ -6,7 +6,7 @@ define(['ModernizrProto', 'createElement'], function(ModernizrProto, createEleme
    * @name Modernizr.hasEvent
    * @optionName Modernizr.hasEvent()
    * @optionProp hasEvent
-   * @access public
+   * @access public2
    * @function hasEvent
    * @param  {string|*} eventName - the name of an event to test for (e.g. "resize")
    * @param  {Element|string} [element=HTMLDivElement] - is the element|document|window|tagName to test on

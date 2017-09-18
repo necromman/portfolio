@@ -6,7 +6,7 @@ define(['ModernizrProto', 'testPropsAll'], function(ModernizrProto, testPropsAll
    * @name Modernizr.testAllProps
    * @optionName Modernizr.testAllProps()
    * @optionProp testAllProps
-   * @access public
+   * @access public2
    * @function testAllProps
    * @param {string} prop - String naming the property to test (either camelCase or kebab-case)
    * @param {string} [value] - String of the value to test

@@ -96,7 +96,7 @@ function on( elem, types, selector, data, fn, one ) {
 }
 
 /*
- * Helper functions for managing events -- not part of the public interface.
+ * Helper functions for managing events -- not part of the public2 interface.
  * Props to Dean Edwards' addEvent library for many of the ideas.
  */
 jQuery.event = {

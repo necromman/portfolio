@@ -7,7 +7,7 @@ define(['ModernizrProto', 'cssomPrefixes'], function(ModernizrProto, prefixes) {
    * @name Modernizr.atRule
    * @optionName Modernizr.atRule()
    * @optionProp atRule
-   * @access public
+   * @access public2
    * @function atRule
    * @param {string} prop - String name of the @-rule to test for
    * @returns {string|boolean} The string representing the (possibly prefixed)

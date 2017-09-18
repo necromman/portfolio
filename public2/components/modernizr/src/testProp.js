@@ -5,7 +5,7 @@ define(['ModernizrProto', 'testProps'], function(ModernizrProto, testProps) {
    *
    * @memberof Modernizr
    * @name Modernizr.testProp
-   * @access public
+   * @access public2
    * @optionName Modernizr.testProp()
    * @optionProp testProp
    * @function testProp

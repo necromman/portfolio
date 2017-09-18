@@ -6,7 +6,7 @@ define(['ModernizrProto', 'injectElementWithStyles'], function(ModernizrProto, i
    * @name Modernizr.testStyles
    * @optionName Modernizr.testStyles()
    * @optionProp testStyles
-   * @access public
+   * @access public2
    * @function testStyles
    * @param {string} rule - String representing a css rule
    * @param {function} callback - A function that is used to test the injected element

@@ -8,7 +8,7 @@ define(['ModernizrProto', 'injectElementWithStyles'], function(ModernizrProto, i
    * @name Modernizr.mq
    * @optionName Modernizr.mq()
    * @optionProp mq
-   * @access public
+   * @access public2
    * @function mq
    * @param {string} mq - String of the media query we want to test
    * @returns {boolean}

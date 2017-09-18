@@ -4,7 +4,7 @@ define(['tests'], function(tests) {
    * ModernizrProto is the constructor for Modernizr
    *
    * @class
-   * @access public
+   * @access public2
    */
 
   var ModernizrProto = {

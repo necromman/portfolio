@@ -6,7 +6,7 @@ define(['ModernizrProto', 'domPrefixes', 'createElement'], function(ModernizrPro
    * @name Modernizr.prefixedCSSValue
    * @optionName Modernizr.prefixedCSSValue()
    * @optionProp prefixedCSSValue
-   * @access public
+   * @access public2
    * @function prefixedCSSValue
    * @param {string} prop - String name of the property to test for
    * @param {string} value - String value of the non prefixed version of the value you want to test for

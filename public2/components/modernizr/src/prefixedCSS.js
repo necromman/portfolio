@@ -7,7 +7,7 @@ define(['ModernizrProto', 'prefixed', 'domToCSS'], function(ModernizrProto, pref
    * @name Modernizr.prefixedCSS
    * @optionName Modernizr.prefixedCSS()
    * @optionProp prefixedCSS
-   * @access public
+   * @access public2
    * @function prefixedCSS
    * @param {string} prop - String name of the property to test for
    * @returns {string|false} The string representing the (possibly prefixed)

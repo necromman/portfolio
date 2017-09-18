@@ -7,7 +7,7 @@ define(['ModernizrProto'], function(ModernizrProto) {
    * @name Modernizr._prefixes
    * @optionName Modernizr._prefixes
    * @optionProp prefixes
-   * @access public
+   * @access public2
    * @example
    *
    * Modernizr._prefixes is the internal list of prefixes that we test against

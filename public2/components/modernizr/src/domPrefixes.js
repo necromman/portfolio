@@ -6,7 +6,7 @@ define(['ModernizrProto', 'omPrefixes'], function(ModernizrProto, omPrefixes) {
    * @name Modernizr._domPrefixes
    * @optionName Modernizr._domPrefixes
    * @optionProp domPrefixes
-   * @access public
+   * @access public2
    * @example
    *
    * Modernizr._domPrefixes is exactly the same as [_prefixes](#modernizr-_prefixes), but rather

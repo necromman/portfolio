@@ -6,7 +6,7 @@ define(['ModernizrProto', 'testPropsAll', 'cssToDOM', 'atRule'], function(Modern
    * @name Modernizr.prefixed
    * @optionName Modernizr.prefixed()
    * @optionProp prefixed
-   * @access public
+   * @access public2
    * @function prefixed
    * @param {string} prop - String name of the property to test for
    * @param {object} [obj] - An object to test for the prefixed properties on
